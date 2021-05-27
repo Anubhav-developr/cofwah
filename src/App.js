@@ -29,6 +29,7 @@ function App() {
         <Route path="/Three"><Three></Three></Route>
         <li><Link to='/four'>5जी रेडियेशन और कोरोनावायरस (5g Radiation and Coronavirus Linkage)</Link></li>
           <Route path="/four"><Four></Four></Route>
+          <li><Link></Link></li>
          </ul>
      </div>
      
@@ -37,7 +38,7 @@ function App() {
         यदि आपके पड़ोस या समाज में कोई अफवाह और मिथक है तो उस भ्रामक अफवाह को प्रस्तुत करें <a href="https://docs.google.com/forms/d/1jAmCNQB2yWYZDjOQFedUWDxqCKuuW4solNrU8vwzU_c/edit#">यहां(here)</a>
         <br></br>
         हमें फोलो करें  :
-        <br></br><div id="folow"><a href="https://www.instagram.com/invites/contact/?i=10zn5unl4z7t2&utm_content=ltaeucz"><img src="" alt="instagram" width="70" height="70"></img></a>
+        <br></br><div id="folow"><a href="https://instagram.com/cofwah/"><img src="" alt="instagram" width="70" height="70"></img></a>
         </div>
         अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें <a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2">here</a>
       
