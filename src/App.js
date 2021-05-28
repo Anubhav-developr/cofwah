@@ -11,27 +11,16 @@ import Four from './pages/Four';
 import Five from './pages/Five';
 import Six from './pages/Six';
 import logoimg from './logo1 (1).png';
+import Vaccine from './pages/Vaccine';
 
 
 function App() {
 
-  const [movies, setMovies] = useState([]);
-
- async function fetchMoviesHandler() {
-    const response = await fetch('URL of API setu');
-    const data = await response.json()
-      
-        const transformedata = data.districts.map((vaxinedata) => {
-          return {
-            id: vaxinedata.district_id,
-            dname: vaxinedata.district_name,
-          };
-        });
-        setMovies(transformedata);
-      }
+  var k = fuv();
+  function fuv() {
+     k = 5;
+  }
   
-
-
   return (
     <div className="App">
       <header className="App-header">
@@ -65,10 +54,13 @@ function App() {
         <br></br><div id="folow"><a href="https://instagram.com/cofwah/"><img src="" alt="instagram" width="70" height="70"></img></a>
         </div>
         अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें <a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2">here</a>
-      
-        <p> <Link to='./vaccine'>Vaccine availibility</Link></p>
+
+        <p>Vaccine Availibility</p>
+        
+      <Vaccine></Vaccine> 
+       
         </p>
-        <Route path="./vaccine"></Route>
+      
         
           
         
