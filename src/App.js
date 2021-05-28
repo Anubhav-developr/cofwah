@@ -8,19 +8,43 @@ import One from './pages/One'
 import RumorList from './components/RumorList'
 import Three from './pages/Three';
 import Four from './pages/Four';
+import Five from './pages/Five';
+import Six from './pages/Six';
+import logoimg from './logo1 (1).png';
 
 
 function App() {
+
+  const [movies, setMovies] = useState([]);
+
+ async function fetchMoviesHandler() {
+    const response = await fetch('URL of API setu');
+    const data = await response.json()
+      
+        const transformedata = data.districts.map((vaxinedata) => {
+          return {
+            id: vaxinedata.district_id,
+            dname: vaxinedata.district_name,
+          };
+        });
+        setMovies(transformedata);
+      }
+  
+
+
   return (
     <div className="App">
       <header className="App-header">
        
         <p>
-        <a href="index.html"> <img src="logo1 (1).png" alt="k" width="200" height="100" id="i"></img></a>
+        <a href="index.html"> <img src={logoimg} alt="k" width="200" height="100" id="i"></img></a>
       <br />
       <h2 class="p">आपको कोविड अफवाहों से बचाना है</h2>
      <div>
-     <ul>
+     <ul><li><Link to='/five'>पल्स ऑक्सीमीटर और पेंसिल( Pulse Oxymeter And Pencil )</Link></li>
+      <Route path="/five"><Five></Five></Route>
+      <li><Link to='/blackfngus'>ब्लैक फंगस से सम्बंधित मिथक(Myths regarding black fungus)</Link></li>
+      <Route path="/blackfngus"><Six></Six></Route>
       <li><Link to='/One'>हैंड सैनिटाइज़र का उपयोग (Using Hand Sanitizer)</Link></li>
       <Route path="/One"><One></One></Route>
         <li><Link to='/Two'>रक्त प्रकार और कोरोनावायरस (Blood type and Coronavirus)</Link></li>
@@ -53,6 +77,7 @@ function App() {
     
     </div>
   );
-  }
+}
+  
 
 export default App;
