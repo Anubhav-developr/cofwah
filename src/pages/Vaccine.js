@@ -2,9 +2,13 @@ import React , { useState } from 'react';
 import MoviesList from '../components/MoviesList';
 
 function Vaccine(){
-    ipp=0;
+    
+    if (document.getElementById("t") != null){
     var ipp = +document.getElementById("t").value;
     var s = ipp.toString();
+    }
+
+     
 
    //vaccine by district trial 
    const [movies, setMovies] = useState([]);
@@ -45,8 +49,8 @@ return( <React.Fragment>
        <p> <button onClick={fetchMoviesHandler}>District List with Id</button> <br></br> <br></br>
         <p>  <MoviesList movies={movies} /></p>
 
-        <p> <button onClick={fetchMoviesHandler1}>District List with xy situatoipojn</button> <br></br> <br></br>
-        <p>  <MoviesList movies={movies} /></p>
+        <p><br></br> <br></br>
+        
         
         </p> </p>
         </React.Fragment>
