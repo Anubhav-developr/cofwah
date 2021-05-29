@@ -9,7 +9,23 @@ function Vaccine(){
     var ipp = +document.getElementById("t").value;
     var s = ipp.toString();
     }
+    if(document.getElementById("ddl")!=null){
+    var date = new Date(document.getElementById("ddl").value)
+       var day = date.getDate();
+       var month = date.getMonth();
+       var year = date.getFullYear();
+       var A = [day,month,year].join('-');
+       var k = A.toString();
+       console.log(k);
+    }
 
+    if (document.getElementById("disID") != null){
+        var mk = +document.getElementById("disID").value;
+        var l = mk.toString();
+        }
+
+   
+     
      
 
    //vaccine by district trial 
@@ -46,7 +62,7 @@ function Vaccine(){
 
           
       async function fetchMoviesHandlersA() {
-        const response = await fetch('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=512&date=31-03-2021');
+        const response = await fetch('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id='+l+'&date='+k);
         const data = await response.json()
           
             const transformedata = data.sessions.map((vaxinedata) => {
@@ -81,8 +97,8 @@ return( <React.Fragment>
        <p> <button onClick={fetchMoviesHandler}>District List with Id</button> <br></br> <br></br>
        <button onClick={fetchMoviesHandlers}> state names with id </button>
        <ul><li>see your appointment with date and district id </li></ul>
-       <input type="date"></input>
-       <input type="number"></input>     
+       <input type="date" id="ddl"></input>
+       <input type="number" id="disID"></input>     
          <button onClick={fetchMoviesHandlersA}> see appointment </button>
         <p>  <MoviesList movies={movies} /></p>
         <p><Statelist movies={stats}></Statelist></p>
