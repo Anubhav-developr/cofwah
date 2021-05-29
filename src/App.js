@@ -30,17 +30,17 @@ function App() {
       <br />
       <h2 class="p">आपको कोविड अफवाहों से बचाना है</h2>
      <div>
-     <ul><li><Link to='/five'>पल्स ऑक्सीमीटर और पेंसिल( Pulse Oxymeter And Pencil )</Link></li>
+     <ul><li className="cssbaba"><Link to='/five'>पल्स ऑक्सीमीटर और पेंसिल( Pulse Oxymeter And Pencil )</Link></li>
       <Route path="/five"><Five></Five></Route>
-      <li><Link to='/blackfngus'>ब्लैक फंगस से सम्बंधित मिथक(Myths regarding black fungus)</Link></li>
+      <li className="cssbaba"><Link to='/blackfngus'>ब्लैक फंगस से सम्बंधित मिथक(Myths regarding black fungus)</Link></li>
       <Route path="/blackfngus"><Six></Six></Route>
-      <li><Link to='/One'>हैंड सैनिटाइज़र का उपयोग (Using Hand Sanitizer)</Link></li>
+      <li className="cssbaba"><Link to='/One'>हैंड सैनिटाइज़र का उपयोग (Using Hand Sanitizer)</Link></li>
       <Route path="/One"><One></One></Route>
-        <li><Link to='/Two'>रक्त प्रकार और कोरोनावायरस (Blood type and Coronavirus)</Link></li>
+        <li className="cssbaba"><Link to='/Two'>रक्त प्रकार और कोरोनावायरस (Blood type and Coronavirus)</Link></li>
         <Route path="/Two"><Two></Two></Route>
-        <li><Link to='/Three'>एंटीबायोटिक्स और कोरोना (Antibiotics and corona)</Link></li>
+        <li className="cssbaba"><Link to='/Three'>एंटीबायोटिक्स और कोरोना (Antibiotics and corona)</Link></li>
         <Route path="/Three"><Three></Three></Route>
-        <li><Link to='/four'>5जी रेडियेशन और कोरोनावायरस (5g Radiation and Coronavirus Linkage)</Link></li>
+        <li className="cssbaba"><Link to='/four'>5जी रेडियेशन और कोरोनावायरस (5g Radiation and Coronavirus Linkage)</Link></li>
           <Route path="/four"><Four></Four></Route>
           <li><Link></Link></li>
          </ul>

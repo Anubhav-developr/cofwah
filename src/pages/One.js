@@ -1,6 +1,6 @@
 const One = () => {
     return (
-        <div>
+        <div className="csskabaap">
          <p>No corelation</p>
         </div>
     )
