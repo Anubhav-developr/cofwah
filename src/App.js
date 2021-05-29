@@ -46,7 +46,8 @@ function App() {
           <li><Link></Link></li>
          </ul>
      </div>
-     
+     <p><Link to="./vac">Vaccine Availibility</Link></p>
+     <Route path="./vac"><Vaccine></Vaccine></Route>
      <Route path="/apnalogin"><APNA_LOGIN></APNA_LOGIN></Route>
         <br></br>
         यदि आपके पड़ोस या समाज में कोई अफवाह और मिथक है तो उस भ्रामक अफवाह को प्रस्तुत करें <a href="https://docs.google.com/forms/d/1jAmCNQB2yWYZDjOQFedUWDxqCKuuW4solNrU8vwzU_c/edit#">यहां(here)</a>
@@ -56,9 +57,7 @@ function App() {
         </div>
         अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें <a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2">here</a>
 
-        <p>Vaccine Availibility</p>
         
-      <Vaccine></Vaccine> 
       <Link to="/apnalogin" id="yuk">VOLUNTEER SIGN IN</Link>
        
         </p>
