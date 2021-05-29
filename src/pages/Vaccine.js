@@ -4,6 +4,14 @@ import Statelist from '../components/Statelist';
 import AppointmentList from '../components/AppointmentList';
 
 function Vaccine(){
+
+    function reverseString(str) {
+        var newString = "";
+        for (var i = str.length - 1; i >= 0; i--) {
+            newString += str[i];
+        }
+        return newString;
+    }
     
     if (document.getElementById("t") != null){
     var ipp = +document.getElementById("t").value;
@@ -11,13 +19,20 @@ function Vaccine(){
     }
     if(document.getElementById("ddl")!=null){
     var date = new Date(document.getElementById("ddl").value)
-       var day = date.getDate();
-       var month = date.getMonth();
-       var year = date.getFullYear();
-       var A = [day,month,year].join('-');
-       var k = A.toString();
-       console.log(k);
+    var dd = date.getDate();
+    var mm = date.getMonth()+1; //January is 0!
+    var yyyy = date.getFullYear();
+    if(dd<10){dd='0'+dd};
+    if(mm<10){mm='0'+mm};
+     var today = dd+'-'+mm+'-'+yyyy;
+   
+      var ui = date.toISOString();
+    
+     
+       
     }
+
+   
 
     if (document.getElementById("disID") != null){
         var mk = +document.getElementById("disID").value;
@@ -62,7 +77,7 @@ function Vaccine(){
 
           
       async function fetchMoviesHandlersA() {
-        const response = await fetch('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id='+l+'&date='+k);
+        const response = await fetch('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id='+l+'&date=29-05-2021');
         const data = await response.json()
           
             const transformedata = data.sessions.map((vaxinedata) => {
