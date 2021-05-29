@@ -1,6 +1,6 @@
 import React , { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Route, Router } from 'react-router-dom';
+import { Route, Router, Switch } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import Two from './pages/Two'
@@ -12,6 +12,7 @@ import Five from './pages/Five';
 import Six from './pages/Six';
 import logoimg from './logo1 (1).png';
 import Vaccine from './pages/Vaccine';
+import APNA_LOGIN from './APNA_LOGIN';
 
 
 function App() {
@@ -30,17 +31,17 @@ function App() {
       <br />
       <h2 class="p">आपको कोविड अफवाहों से बचाना है</h2>
      <div>
-     <ul><li className="cssbaba"><Link to='/five'>पल्स ऑक्सीमीटर और पेंसिल( Pulse Oxymeter And Pencil )</Link></li>
+     <ul><li className="cssbaba"><Link to='/five' id="li">पल्स ऑक्सीमीटर और पेंसिल( Pulse Oxymeter And Pencil )</Link></li>
       <Route path="/five"><Five></Five></Route>
-      <li className="cssbaba"><Link to='/blackfngus'>ब्लैक फंगस से सम्बंधित मिथक(Myths regarding black fungus)</Link></li>
+      <li className="cssbaba"><Link to='/blackfngus' id="li">ब्लैक फंगस से सम्बंधित मिथक(Myths regarding black fungus)</Link></li>
       <Route path="/blackfngus"><Six></Six></Route>
-      <li className="cssbaba"><Link to='/One'>हैंड सैनिटाइज़र का उपयोग (Using Hand Sanitizer)</Link></li>
+      <li className="cssbaba"><Link to='/One' id="li">हैंड सैनिटाइज़र का उपयोग (Using Hand Sanitizer)</Link></li>
       <Route path="/One"><One></One></Route>
-        <li className="cssbaba"><Link to='/Two'>रक्त प्रकार और कोरोनावायरस (Blood type and Coronavirus)</Link></li>
+        <li className="cssbaba"><Link to='/Two' id="li">रक्त प्रकार और कोरोनावायरस (Blood type and Coronavirus)</Link></li>
         <Route path="/Two"><Two></Two></Route>
-        <li className="cssbaba"><Link to='/Three'>एंटीबायोटिक्स और कोरोना (Antibiotics and corona)</Link></li>
+        <li className="cssbaba"><Link to='/Three' id="li">एंटीबायोटिक्स और कोरोना (Antibiotics and corona)</Link></li>
         <Route path="/Three"><Three></Three></Route>
-        <li className="cssbaba"><Link to='/four'>5जी रेडियेशन और कोरोनावायरस (5g Radiation and Coronavirus Linkage)</Link></li>
+        <li className="cssbaba"><Link to='/four' id="li">5जी रेडियेशन और कोरोनावायरस (5g Radiation and Coronavirus Linkage)</Link></li>
           <Route path="/four"><Four></Four></Route>
           <li><Link></Link></li>
          </ul>
@@ -58,7 +59,7 @@ function App() {
         <p>Vaccine Availibility</p>
         
       <Vaccine></Vaccine> 
-       
+       <APNA_LOGIN></APNA_LOGIN>
         </p>
       
         
