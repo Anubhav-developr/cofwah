@@ -31,18 +31,18 @@ export default function Login({setToken}) {
 
 return( <React.Fragment>
       <div className="login-wrapper"></div>
-      <h1>Log In Page for Volunteers</h1>
+      <h1 className="baba">Log In Page for Volunteers</h1>
     <form onSubmit={handleSubmit}>
       <label>
-        <p>Username</p>
+        <p className="baba">Username</p>
         <input type="text" onChange={e=>setUserName(e.target.value)} />
       </label>
       <label>
-        <p>Password</p>
+        <p className="baba">Password</p>
         <input type="password" onChange={e=>setPassword(e.target.value)} />
       </label>
       <div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="baba">Submit</button>
       </div>
     </form>
     </React.Fragment>   

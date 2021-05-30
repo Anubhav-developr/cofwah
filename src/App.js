@@ -13,6 +13,8 @@ import Six from './pages/Six';
 import logoimg from './logo1 (1).png';
 import Vaccine from './pages/Vaccine';
 import APNA_LOGIN from './APNA_LOGIN';
+import insta from './pages/insta.jpg';
+import what from './pages/what.png';
 
 
 function App() {
@@ -49,16 +51,16 @@ function App() {
      
      <Route path="/apnalogin"><APNA_LOGIN></APNA_LOGIN></Route>
         <br></br>
-        यदि आपके पड़ोस या समाज में कोई अफवाह और मिथक है तो उस भ्रामक अफवाह को प्रस्तुत करें <a href="https://docs.google.com/forms/d/1jAmCNQB2yWYZDjOQFedUWDxqCKuuW4solNrU8vwzU_c/edit#">यहां(here)</a>
+        <div className="jaha">यदि आपके पड़ोस या समाज में कोई अफवाह और मिथक है तो उस भ्रामक अफवाह को प्रस्तुत करें <a href="https://docs.google.com/forms/d/1jAmCNQB2yWYZDjOQFedUWDxqCKuuW4solNrU8vwzU_c/edit#">यहां(here)</a></div>
         <br></br>
-        हमें फोलो करें  :
-        <br></br><div id="folow"><a href="https://instagram.com/cofwah/"><img src="" alt="instagram" width="70" height="70"></img></a>
+       <div className="jaha"> हमें फोलो करें  :</div>
+        <div id="folow"><a href="https://instagram.com/cofwah/"><img src={insta} alt="instagram" width="60" height="60"></img></a>
         </div>
-        अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें <a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2">here</a>
-        <p><Link to="./vac">Vaccine Availibility</Link></p>
+        <div className="jaha">अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें  <br></br><a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2"><img src={what} height="50" width="50"></img></a></div>
+        <p><Link to="./vac" className="jaha" id="jkl">Vaccine Availibility</Link></p>
      <Route path="./vac"><Vaccine></Vaccine></Route>
         <br></br>
-      <Link to="/apnalogin" id="yuk">VOLUNTEER SIGN IN</Link>
+      <Link to="/apnalogin" id="yuk" className="jaha">VOLUNTEER SIGN IN</Link>
        
         </p>
       

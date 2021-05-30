@@ -1,5 +1,18 @@
+
+@font-face {
+    font-family: anubhav_ka_font;
+    src: url("../../pages/ANUBHAVG.ttf");
+  }
+
 .login-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 }
+
+.baba{
+    font-family: anubhav_ka_font;
+    font-size: larger;
+}
+
