@@ -17,7 +17,12 @@ import insta from './pages/insta.jpg';
 import what from './pages/what.png';
 
 
+
+
 function App() {
+
+  
+
 
   var k = fuv();
   function fuv() {
@@ -60,7 +65,7 @@ function App() {
         <p><Link to="./vac" className="jaha" id="jkl">Vaccine Availibility</Link></p>
      <Route path="./vac"><Vaccine></Vaccine></Route>
         <br></br>
-      <Link to="/apnalogin" id="yuk" className="jaha">VOLUNTEER SIGN IN</Link>
+      <Link to="/apnalogin" id="yuk" className="jaha">MEMBER SIGN IN</Link>
        
         </p>
       
