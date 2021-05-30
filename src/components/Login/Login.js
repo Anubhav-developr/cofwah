@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import './Login.css';
 import propTypes from 'prop-types';
 
+function gg(){
+    window.alert("enter correct data")
+}
+
 async function loginUser(credentials) {
     return fetch('http://localhost:8080/login', {
       method: 'POST',
@@ -42,7 +46,7 @@ return( <React.Fragment>
         <input type="password" onChange={e=>setPassword(e.target.value)} />
       </label>
       <div>
-        <button type="submit" className="baba">Submit</button>
+        <button type="submit" className="baba" onClick={gg}>Submit</button>
       </div>
     </form>
     </React.Fragment>   
