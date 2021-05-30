@@ -55,9 +55,8 @@ function App() {
         <br></br><div id="folow"><a href="https://instagram.com/cofwah/"><img src="" alt="instagram" width="70" height="70"></img></a>
         </div>
         अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें <a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2">here</a>
-        <p>Vaccine Availibility</p>
-     <Vaccine></Vaccine>
-        
+        <p><Link to="./vac">Vaccine Availibility</Link></p>
+     <Route path="./vac"><Vaccine></Vaccine></Route>
         <br></br>
       <Link to="/apnalogin" id="yuk">VOLUNTEER SIGN IN</Link>
        
