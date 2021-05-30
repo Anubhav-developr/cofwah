@@ -33,17 +33,17 @@ function App() {
       <br />
       <h2 class="p">आपको कोविड अफवाहों से बचाना है</h2>
      <div>
-     <ul><li className="cssbaba"><Link to='/five' id="li">पल्स ऑक्सीमीटर और पेंसिल( Pulse Oxymeter And Pencil )</Link></li>
+     <ul><Link to='/five' id="li"><li className="cssbaba">पल्स ऑक्सीमीटर और पेंसिल( Pulse Oxymeter And Pencil )</li></Link>
       <Route path="/five"><Five></Five></Route>
-      <li className="cssbaba"><Link to='/blackfngus' id="li">ब्लैक फंगस से सम्बंधित मिथक(Myths regarding black fungus)</Link></li>
+      <Link to='/blackfngus' id="li"> <li className="cssbaba">ब्लैक फंगस से सम्बंधित मिथक(Myths regarding black fungus)</li></Link>
       <Route path="/blackfngus"><Six></Six></Route>
-      <li className="cssbaba"><Link to='/One' id="li">हैंड सैनिटाइज़र का उपयोग (Using Hand Sanitizer)</Link></li>
+      <Link to='/One' id="li"> <li className="cssbaba">हैंड सैनिटाइज़र का उपयोग (Using Hand Sanitizer)</li></Link>
       <Route path="/One"><One></One></Route>
-        <li className="cssbaba"><Link to='/Two' id="li">रक्त प्रकार और कोरोनावायरस (Blood type and Coronavirus)</Link></li>
+      <Link to='/Two' id="li"> <li className="cssbaba">रक्त प्रकार और कोरोनावायरस (Blood type and Coronavirus)</li></Link>
         <Route path="/Two"><Two></Two></Route>
-        <li className="cssbaba"><Link to='/Three' id="li">एंटीबायोटिक्स और कोरोना (Antibiotics and corona)</Link></li>
+        <Link to='/Three' id="li"><li className="cssbaba">एंटीबायोटिक्स और कोरोना (Antibiotics and corona)</li></Link>
         <Route path="/Three"><Three></Three></Route>
-        <li className="cssbaba"><Link to='/four' id="li">5जी रेडियेशन और कोरोनावायरस (5g Radiation and Coronavirus Linkage)</Link></li>
+        <Link to='/four' id="li"><li className="cssbaba">5जी रेडियेशन और कोरोनावायरस (5g Radiation and Coronavirus Linkage)</li></Link>
           <Route path="/four"><Four></Four></Route>
           <li><Link></Link></li>
          </ul>
