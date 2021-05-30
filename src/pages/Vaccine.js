@@ -17,6 +17,8 @@ function Vaccine(){
     var ipp = +document.getElementById("t").value;
     var s = ipp.toString();
     }
+
+    // getting the date from input tag//{<input type="date" id="ddl></input>"}
     if(document.getElementById("ddl")!=null){
     var date = new Date(document.getElementById("ddl").value)
     var dd = date.getDate();
@@ -77,7 +79,7 @@ function Vaccine(){
 
           
       async function fetchMoviesHandlersA() {
-        const response = await fetch('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id='+l+'&date='+today);
+        const response = await fetch('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=688&date=31-03-2021');
         const data = await response.json()
           
             const transformedata = data.sessions.map((vaxinedata) => {
@@ -118,7 +120,7 @@ return( <React.Fragment>
         <p>  <MoviesList movies={movies} /></p>
         <p><Statelist movies={stats}></Statelist></p>
         <p><AppointmentList  movies={statss}></AppointmentList></p>
-       
+        
 
         <p><br></br> <br></br>
         
