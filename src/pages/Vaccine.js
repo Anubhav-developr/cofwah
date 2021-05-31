@@ -27,6 +27,7 @@ function Vaccine(){
     if(dd<10){dd='0'+dd};
     if(mm<10){mm='0'+mm};
      var today = dd+'-'+mm+'-'+yyyy;
+     
    
       
     
@@ -79,7 +80,7 @@ function Vaccine(){
 
           
       async function fetchMoviesHandlersA() {
-        const response = await fetch('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=688&date=31-03-2021');
+        const response = await fetch(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=${l}&date=${today}`);
         const data = await response.json()
           
             const transformedata = data.sessions.map((vaxinedata) => {

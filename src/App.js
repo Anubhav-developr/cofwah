@@ -44,6 +44,7 @@ function App() {
       <Route path="/blackfngus"><Six></Six></Route>
       <Link to='/One' id="li"> <li className="cssbaba">हैंड सैनिटाइज़र का उपयोग (Using Hand Sanitizer)</li></Link>
       <Route path="/One"><One></One></Route>
+    
       <Link to='/Two' id="li"> <li className="cssbaba">रक्त प्रकार और कोरोनावायरस (Blood type and Coronavirus)</li></Link>
         <Route path="/Two"><Two></Two></Route>
         <Link to='/Three' id="li"><li className="cssbaba">एंटीबायोटिक्स और कोरोना (Antibiotics and corona)</li></Link>
@@ -63,7 +64,7 @@ function App() {
         </div>
         <div className="jaha">अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें  <br></br><a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2"><img src={what} height="50" width="50"></img></a></div>
         <p><Link to="./vac" className="jaha" id="jkl">Vaccine Availibility</Link></p>
-     <Route path="./vac"><Vaccine></Vaccine></Route>
+     <Vaccine></Vaccine>
         <br></br>
       <Link to="/apnalogin" id="yuk" className="jaha">MEMBER SIGN IN</Link>
        
