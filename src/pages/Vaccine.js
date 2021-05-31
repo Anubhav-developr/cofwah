@@ -164,8 +164,9 @@ return( <React.Fragment>
         <p><Statelist movies={stats}></Statelist></p>
         <p>{!loadhoega && <AppointmentList  movies={statss}></AppointmentList>}</p>
           
-            {loadhoega && statss.length>0 && <p id="loadwala">Loading....</p>}
-            {loadhoega && statss.length===0 && <p id="loadwala">Nothing found </p>}
+            {loadhoega && statss.length>0 && !error && <p id="loadwala">Loading....</p>}
+            {loadhoega && statss.length===0 && !error && <p id="loadwala">Nothing found </p>}
+            {!loadhoega && error && <p>{error}</p>}
         <p><br></br> <br></br>
         
         
