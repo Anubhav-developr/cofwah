@@ -2,6 +2,7 @@ import React , { useState } from 'react';
 import MoviesList from '../components/MoviesList';
 import Statelist from '../components/Statelist';
 import AppointmentList from '../components/AppointmentList';
+import './load.css'
 
 function Vaccine(){
 
@@ -50,10 +51,11 @@ function Vaccine(){
    const [movies, setMovies] = useState([]);
    const [stats,setStatess] = useState([]);
    const [statss,setStatessa] = useState([]);
+   const [loadhoega,loadingbaba] = useState(false);
   
 
  async function fetchMoviesHandler() {
-    const response = await fetch('https://cdn-api.co-vin.in/api/v2/admin/location/districts/'+s);
+    const response = await fetch(`https://cdn-api.co-vin.in/api/v2/admin/location/districts/${s}`);
     const data = await response.json()
       
         const transformedata = data.districts.map((vaxinedata) => {
@@ -80,6 +82,7 @@ function Vaccine(){
 
           
       async function fetchMoviesHandlersA() {
+        loadingbaba(true);
         const response = await fetch(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=${l}&date=${today}`);
         const data = await response.json()
           
@@ -103,6 +106,8 @@ function Vaccine(){
               };
             });
             setStatessa(transformedata);
+            loadingbaba(false);
+            
           }
       
   
@@ -120,8 +125,8 @@ return( <React.Fragment>
          <button onClick={fetchMoviesHandlersA}> see appointment </button>
         <p>  <MoviesList movies={movies} /></p>
         <p><Statelist movies={stats}></Statelist></p>
-        <p><AppointmentList  movies={statss}></AppointmentList></p>
-        
+        <p>{!loadhoega && <AppointmentList  movies={statss}></AppointmentList>}</p>
+            {loadhoega && <p id="loadwala">Loading....</p>}
 
         <p><br></br> <br></br>
         
