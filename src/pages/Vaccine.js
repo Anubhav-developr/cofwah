@@ -87,10 +87,11 @@ function Vaccine(){
         kyagadbad(null);
         try {
           const response = await fetch(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=${l}&date=${today}`);
-        const data = await response.json()
+       
           if(!response.ok){
             throw new Error('Something went wrong');
           }
+          const data = await response.json()
             const transformedata = data.sessions.map((vaxinedata) => {
               return {
                 cid: vaxinedata.center_id,
