@@ -1,4 +1,4 @@
-import React , { useState } from 'react';
+import React , { useState , useEffect , useCallback } from 'react';
 import MoviesList from '../components/MoviesList';
 import Statelist from '../components/Statelist';
 import AppointmentList from '../components/AppointmentList';
@@ -81,8 +81,9 @@ function Vaccine(){
             setStatess(transformedata);
           }
 
-          
-      async function fetchMoviesHandlersA() {
+         
+
+      const fetchMoviesHandlersA = useCallback(async()=> {
         loadingbaba(true);
         kyagadbad(null);
         try {
@@ -145,9 +146,9 @@ function Vaccine(){
             setStatessa(transformedata);
             loadingbaba(false);
             
-          }
+          },[]);
       
-  
+          useEffect(()=>{fetchMoviesHandlersA();},[fetchMoviesHandlersA]);
 
 
 

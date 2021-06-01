@@ -1,0 +1,50 @@
+#jij {
+    color: red;
+
+}
+
+@font-face {
+    font-family: anubhav_ka_font;
+    src: url("../ANUBHAVG.ttf");
+  }
+  
+  a:hover{
+    color: brown;
+  }
+  span{
+    color: red;
+  }
+  
+  li{
+  border: 3px solid violet;
+  
+  
+  
+  
+  }
+  li:hover{
+    background-color: yellow;
+    opacity: 1.7;
+  }
+  
+  
+  
+li {
+    text-decoration: none;
+    color: rgb(170, 40, 196);
+   font-family: anubhav_ka_font;
+   font-size: large;
+   
+    
+  }
+
+  .haua {
+      text-decoration: none;
+  }
+  
+ 
+  
+  
+  
+ 
+  
