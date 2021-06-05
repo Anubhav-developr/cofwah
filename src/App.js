@@ -15,6 +15,7 @@ import Vaccine from './pages/Vaccine';
 import APNA_LOGIN from './APNA_LOGIN';
 import insta from './pages/insta.jpg';
 import what from './pages/what.png';
+import Handryer from './pages/Handryer';
 
 
 
@@ -51,8 +52,8 @@ function App() {
         <Route path="/Three"><Three></Three></Route>
         <Link to='/four' id="li"><li className="cssbaba">5जी रेडियेशन और कोरोनावायरस (5g Radiation and Coronavirus Linkage)</li></Link>
           <Route path="/four"><Four></Four></Route>
-          <li><Link></Link></li>
-         </ul>
+          <li><Link to='/five' style={{textDecoration: "None"}}>हैंड ड्रायर नए कोरोनोवायरस को मारने में प्रभावी हैं।</Link></li>
+         <Route path="/five"><Handryer></Handryer></Route></ul>
      </div>
      
      <Route path="/apnalogin"><APNA_LOGIN></APNA_LOGIN></Route>

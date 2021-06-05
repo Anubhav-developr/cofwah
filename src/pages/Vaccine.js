@@ -46,7 +46,7 @@ function Vaccine(){
    
      
      
-
+ var url = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=688&date=07-06-21`;
    //vaccine by district trial 
    const [movies, setMovies] = useState([]);
    const [stats,setStatess] = useState([]);
@@ -87,7 +87,7 @@ function Vaccine(){
         loadingbaba(true);
         kyagadbad(null);
         try {
-          const response = await fetch(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=${l}&date=${today}`);
+          const response = await fetch(url);
        
           if(!response.ok){
             throw new Error('Something went wrong');
@@ -121,7 +121,7 @@ function Vaccine(){
               kyagadbad(error.message);
         }
         loadingbaba(false);
-        const response = await fetch(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=${l}&date=${today}`);
+        const response = await fetch(url);
         const data = await response.json()
           
             const transformedata = data.sessions.map((vaxinedata) => {
@@ -159,7 +159,7 @@ return( <React.Fragment>
        <button onClick={fetchMoviesHandlers}> state names with id </button>
        <ul><li>see your appointment with date and district id </li></ul>
        <input type="date" id="ddl"></input>
-       <input type="number" id="disID"></input>     
+       <input type="number" id="disID"></input>    
          <button onClick={fetchMoviesHandlersA}> see appointment </button>
         <p>  <MoviesList movies={movies} /></p>
         <p><Statelist movies={stats}></Statelist></p>
@@ -167,7 +167,7 @@ return( <React.Fragment>
           
             {loadhoega && statss.length>0 && !error && <p id="loadwala">Loading....</p>}
             {loadhoega && statss.length===0 && !error && <p id="loadwala">Nothing found </p>}
-            {!loadhoega && error && <p>{error}</p>}
+            {!loadhoega && error && <p>{error}</p>}         
         <p><br></br> <br></br>
         
         
