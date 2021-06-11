@@ -2,8 +2,8 @@ import { Link, Switch } from 'react-router-dom';
 import { Route , BrowserRouter } from 'react-router-dom';
 import './CSS_ke_log/vaxinn.css';
 import Dastane from './Dastane';
-import Alcohol_touch from './Alcohol_touch';
-import Saniti_Matra from './Saniti_Matra';
+import AlcoholTouch from './AlcoholTouch';
+import SanitiMatra from './SanitiMatra';
 
 const One = () => {
     return (   
@@ -21,12 +21,12 @@ const One = () => {
        <li> <Link to="/One/ht" className="haua">  जिन धर्मों में शराब प्रतिबंधित है, वहां अल्कोहल आधारित सैनिटाइज़र का उपयोग किया जा सकता है </Link></li>
              <Route path="/One/ht" exact>बीमारी को कम करने या बेहतर स्वास्थ्य में योगदान करने के लिए विकसित किसी भी निर्मित पदार्थ को कुरान द्वारा अनुमति दी गई है, जिसमें एक चिकित्सा एजेंट के रूप में उपयोग की जाने वाली शराब भी शामिल है (بیماری کے خاتمے یا بہتر صحت میں شراکت کے ل developed تیار کیا جانے والا کوئی بھی مادہ قرآن مجید کے ذریعہ اجازت دیتا ہے ، اس میں میڈیکل ایجنٹ کے طور پر الکحل بھی شامل ہے۔)</Route>
             <li> <Link to="One/hpm" className="haua">अपने हाथों को बार-बार साफ करना और दस्ताने नहीं पहनना सुरक्षित है</Link></li>
-             <Route path="/One/hpm" exact><Dastane></Dastane></Route>
+             <Route path="/One/hpm" ><Dastane></Dastane></Route>
          <li><Link to="One/hkl" className="haua">अल्कोहल-आधारित सैनिटाइज़र की सांप्रदायिक बोतल को छूने से आप संक्रमित नहीं होंगे</Link></li>
-             <Route path="/One/hkl" exact><Alcohol_touch></Alcohol_touch></Route>
+             <Route path="/One/hkl" ><AlcoholTouch></AlcoholTouch></Route>
 
     <li><Link to="One/htm" className="haua">आपके द्वारा उपयोग किए जाने वाले अल्कोहल-आधारित सैनिटाइज़र की मात्रा मायने रखती है</Link></li>
-             <Route path="/One/htm" exact><Saniti_Matra></Saniti_Matra></Route>
+             <Route path="/One/htm" ><SanitiMatra></SanitiMatra></Route>
             
             
              </BrowserRouter></Switch></ul>

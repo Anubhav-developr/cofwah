@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Movie from './Movie';
+
 import State from './State';
 
 

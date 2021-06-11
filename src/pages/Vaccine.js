@@ -6,13 +6,7 @@ import './load.css'
 
 function Vaccine(){
 
-    function reverseString(str) {
-        var newString = "";
-        for (var i = str.length - 1; i >= 0; i--) {
-            newString += str[i];
-        }
-        return newString;
-    }
+   
     
     if (document.getElementById("t") != null){
     var ipp = +document.getElementById("t").value;
@@ -43,10 +37,10 @@ function Vaccine(){
         var l = mk.toString();
         }
 
-   
+     var arrayy = {l,today};
      
      
- var url = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=${l}&date=${today}`;
+ 
    //vaccine by district trial 
    const [movies, setMovies] = useState([]);
    const [stats,setStatess] = useState([]);
@@ -87,7 +81,7 @@ function Vaccine(){
         loadingbaba(true);
         kyagadbad(null);
         try {
-          const response = await fetch(url);
+          const response = await fetch(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=${l}&date=${today}`);
        
           if(!response.ok){
             throw new Error('Something went wrong');
@@ -121,13 +115,11 @@ function Vaccine(){
               kyagadbad(error.message);
         }
         loadingbaba(false);
-        const response = await fetch(url);
+        const response = await fetch(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=${l}&date=${today}`);
         const data = await response.json() 
-        if(!data.sessions) {
-          data.sessions = [];
-        }     
-          
-            const transformedata = data.sessions.map((vaxinedata) => {
+        var arrify =  data.sessions;
+          if(arrify){
+            const transformedata =arrify.map((vaxinedata) => {
               return {
                 cid: vaxinedata.center_id,
                 cname: vaxinedata.name,
@@ -145,11 +137,11 @@ function Vaccine(){
 
 
               };
-            });
+            }); 
             setStatessa(transformedata);
             loadingbaba(false);
-            
-          },[]);
+          }
+          },arrayy);
       
           useEffect(()=>{fetchMoviesHandlersA();},[fetchMoviesHandlersA]);
 

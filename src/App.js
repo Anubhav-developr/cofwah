@@ -1,11 +1,9 @@
-import React , { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Route, Router, Switch } from 'react-router-dom';
-import logo from './logo.svg';
+import React from 'react';
+import { Link , useHistory } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Two from './pages/Two'
 import One from './pages/One'
-import RumorList from './components/RumorList'
 import Three from './pages/Three';
 import Four from './pages/Four';
 import Five from './pages/Five';
@@ -23,12 +21,12 @@ import Handryer from './pages/Handryer';
 function App() {
 
   
+const History = useHistory();
 
+const handleRoute = () =>{ 
+  History.push("/apnalogin");
+}
 
-  var k = fuv();
-  function fuv() {
-     k = 5;
-  }
   
   return (
     <div className="App">
@@ -62,18 +60,18 @@ function App() {
          
      </div>
      
-     <Route path="/apnalogin"><APNA_LOGIN></APNA_LOGIN></Route>
+    <Switch> <Route path="/apnalogin"><APNA_LOGIN></APNA_LOGIN></Route></Switch>
         <br></br>
         <div className="jaha">यदि आपके पड़ोस या समाज में कोई अफवाह और मिथक है तो उस भ्रामक अफवाह को प्रस्तुत करें <a href="https://docs.google.com/forms/d/1jAmCNQB2yWYZDjOQFedUWDxqCKuuW4solNrU8vwzU_c/edit#">यहां(here)</a></div>
         <br></br>
        <div className="jaha"> हमें फोलो करें  :</div>
         <div id="folow"><a href="https://instagram.com/cofwah/"><img src={insta} alt="instagram" width="60" height="60"></img></a>
         </div>
-        <div className="jaha">अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें  <br></br><a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2"><img src={what} height="50" width="50"></img></a></div>
+        <div className="jaha">अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें  <br></br><a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2"><img src={what} height="50" width="50" alt="WA group"></img></a></div>
         <p><Link to="./vac" className="jaha" id="jkl">Vaccine Availibility</Link></p>
      <Vaccine></Vaccine>
         <br></br>
-      <Link to="/apnalogin" id="yuk" className="jaha">MEMBER SIGN IN</Link>
+      <Link to="/apnalogin" id="yuk" className="jaha" onClick={handleRoute}>MEMBER SIGN IN</Link>
        
         </p>
       

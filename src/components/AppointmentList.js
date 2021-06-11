@@ -1,6 +1,5 @@
 import Appointment from './Appointment';
-import Movie from './Movie';
-import State from './State';
+
 
 
 const AppointmentList = (props) => {
