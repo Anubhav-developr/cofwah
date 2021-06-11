@@ -152,7 +152,7 @@ return( <React.Fragment>
         <button>Submit state id</button>
        <p> <button onClick={fetchMoviesHandler}>District List with Id</button> <br></br> <br></br>
        <button onClick={fetchMoviesHandlers}> state names with id </button>
-       <ul><li>see your appointment with date and district id </li></ul>
+       <ul>see your appointment with date and district id</ul>
        <input type="date" id="ddl"></input>
        <input type="number" id="disID"></input>    
          <button onClick={fetchMoviesHandlersA}> see appointment </button>

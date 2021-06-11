@@ -9,10 +9,7 @@ function Six() {
         <li><Link to='/blackfngus/s'>दूसरा मिथक : कच्चा खाना खाने से व्यक्ति ब्लैक फंगस से संक्रमित हो सकता है |</Link></li>
         <Route path="/blackfngus/s" exact>
 इस दावे का समर्थन करने के लिए अब तक कोई डेटा उपलब्ध नहीं है।</Route>
-        <li><Link to='/blackfngus/t'></Link></li>
-        <Route path="/blackfngus/t" exact></Route>
-        <li><Link to='/blackfngus/fo'></Link></li>
-        <Route path="/blackfngus/fo" exact></Route>
+      
       </ul>
     </div>
   );

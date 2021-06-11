@@ -50,7 +50,7 @@ const handleRoute = () =>{
         <Route path="/Three"><Three></Three></Route>
         <Link to='/four' id="li"><li className="cssbaba">5जी रेडियेशन और कोरोनावायरस (5g Radiation and Coronavirus Linkage)</li></Link>
           <Route path="/four"><Four></Four></Route>
-          <li><Link to='/fivve' style={{textDecoration: "None"}}>हैंड ड्रायर </Link></li>
+          <Link to='/fivve' style={{textDecoration: "None"}}><li>हैंड ड्रायर </li></Link>
          <Route path="/fivve"><Handryer></Handryer></Route>
          
        
@@ -60,7 +60,7 @@ const handleRoute = () =>{
          
      </div>
      
-    <Switch> <Route path="/apnalogin"><APNA_LOGIN></APNA_LOGIN></Route></Switch>
+    
         <br></br>
         <div className="jaha">यदि आपके पड़ोस या समाज में कोई अफवाह और मिथक है तो उस भ्रामक अफवाह को प्रस्तुत करें <a href="https://docs.google.com/forms/d/1jAmCNQB2yWYZDjOQFedUWDxqCKuuW4solNrU8vwzU_c/edit#">यहां(here)</a></div>
         <br></br>
@@ -72,7 +72,7 @@ const handleRoute = () =>{
      <Vaccine></Vaccine>
         <br></br>
       <Link to="/apnalogin" id="yuk" className="jaha" onClick={handleRoute}>MEMBER SIGN IN</Link>
-       
+      <Route path="/apnalogin"><APNA_LOGIN></APNA_LOGIN></Route>
         </p>
       
         
