@@ -60,12 +60,26 @@ background-color:yellowgreen;
 #jkl {
   border: 2px solid pink;
   background: pink;
+  text-decoration: none;
 }
 
 #undev {
   background-color: aquamarine;
-  opacity: 0.5;
+
   border: 0.5px solid violet;
+  
+  margin: auto;
+}
+#loginboundary {
+  border: 1px solid rgb(243, 176, 243);
+  background-color: aquamarine;
+  margin: auto;
+  
+}
+
+
+#vaccinesys {
+  margin: auto;
 }
 
 

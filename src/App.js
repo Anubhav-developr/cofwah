@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link , useHistory } from 'react-router-dom';
-import { Route, Switch } from 'react-router-dom';
+import { Link ,Switch,BrowserRouter, useHistory } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './App.css';
 import Two from './pages/Two'
 import One from './pages/One'
@@ -11,7 +11,7 @@ import Six from './pages/Six';
 import logoimg from './logo1 (1).png';
 import Vaccine from './pages/Vaccine';
 import APNA_LOGIN from './APNA_LOGIN';
-import insta from './pages/insta.jpg';
+import insta from './images.png';
 import what from './pages/what.png';
 import Handryer from './pages/Handryer';
 
@@ -68,11 +68,17 @@ const handleRoute = () =>{
         <div id="folow"><a href="https://instagram.com/cofwah/"><img src={insta} alt="instagram" width="60" height="60"></img></a>
         </div>
         <div className="jaha">अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें  <br></br><a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2"><img src={what} height="50" width="50" alt="WA group"></img></a></div>
-        <p><Link to="./vac" className="jaha" id="jkl">Vaccine Availibility</Link></p>
-     <Vaccine></Vaccine>
+       <div id="undev">
+      <p><Link to="./vacx" className="jaha" id="jkl">Vaccine Availibility (Under Development)</Link></p>
+        
+        <div id="vaccinesys"><Route path="./vacx" exact><Vaccine /></Route></div>
+       
+      
+       </div>
         <br></br>
+       <div id="loginboundary"> <Route path="/apnalogin"><APNA_LOGIN></APNA_LOGIN></Route></div>
       <Link to="/apnalogin" id="yuk" className="jaha" onClick={handleRoute}>MEMBER SIGN IN</Link>
-      <Route path="/apnalogin"><APNA_LOGIN></APNA_LOGIN></Route>
+     
         </p>
       
         
