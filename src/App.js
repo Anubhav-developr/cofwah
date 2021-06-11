@@ -52,8 +52,14 @@ function App() {
         <Route path="/Three"><Three></Three></Route>
         <Link to='/four' id="li"><li className="cssbaba">5जी रेडियेशन और कोरोनावायरस (5g Radiation and Coronavirus Linkage)</li></Link>
           <Route path="/four"><Four></Four></Route>
-          <li><Link to='/five' style={{textDecoration: "None"}}>हैंड ड्रायर नए कोरोनोवायरस को मारने में प्रभावी हैं।</Link></li>
-         <Route path="/five"><Handryer></Handryer></Route></ul>
+          <li><Link to='/fivve' style={{textDecoration: "None"}}>हैंड ड्रायर </Link></li>
+         <Route path="/fivve"><Handryer></Handryer></Route>
+         
+       
+     
+         
+         </ul>
+         
      </div>
      
      <Route path="/apnalogin"><APNA_LOGIN></APNA_LOGIN></Route>

@@ -46,7 +46,7 @@ function Vaccine(){
    
      
      
- var url = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=688&date=07-06-21`;
+ var url = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=${l}&date=${today}`;
    //vaccine by district trial 
    const [movies, setMovies] = useState([]);
    const [stats,setStatess] = useState([]);
@@ -122,7 +122,10 @@ function Vaccine(){
         }
         loadingbaba(false);
         const response = await fetch(url);
-        const data = await response.json()
+        const data = await response.json() 
+        if(!data.sessions) {
+          data.sessions = [];
+        }     
           
             const transformedata = data.sessions.map((vaxinedata) => {
               return {
