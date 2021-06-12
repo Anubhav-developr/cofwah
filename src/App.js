@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link ,Switch,BrowserRouter, useHistory } from 'react-router-dom';
+import { Link , useHistory } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import './App.css';
 import Two from './pages/Two'
@@ -14,6 +14,7 @@ import APNA_LOGIN from './APNA_LOGIN';
 import insta from './images.png';
 import what from './pages/what.png';
 import Handryer from './pages/Handryer';
+import Magnet from './pages/Magnet';
 
 
 
@@ -52,7 +53,8 @@ const handleRoute = () =>{
           <Route path="/four"><Four></Four></Route>
           <Link to='/fivve' style={{textDecoration: "None"}}><li>हैंड ड्रायर </li></Link>
          <Route path="/fivve"><Handryer></Handryer></Route>
-         
+         <Link to="/magnet" style={{textDecoration: "None"}}><li>वैक्सीन और चुम्बक (Magnet)</li></Link>
+         <Route path="/magnet"><Magnet></Magnet></Route>
        
      
          
