@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import './CSS_ke_log/Pencilwala.css';
 import Sound from 'react-sound';
 import PENCIL from './pencil.mp3'
+import './CSS_ke_log/CssForFIVEJS.css'
 function Five() {
 
     const [isPlaying,setIsPlaying]= useState(false);

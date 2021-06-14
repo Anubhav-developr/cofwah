@@ -53,7 +53,7 @@ const handleRoute = () =>{
           <Route path="/four"><Four></Four></Route>
           <Link to='/fivve' style={{textDecoration: "None"}}><li>हैंड ड्रायर </li></Link>
          <Route path="/fivve"><Handryer></Handryer></Route>
-         <Link to="/magnet" style={{textDecoration: "None"}}><li>वैक्सीन और चुम्बक (Magnet)</li></Link>
+         <Link to="/magnet" style={{textDecoration: "None"}}><li>वैक्सीन और चुम्बक (Magnet and Vaccine)</li></Link>
          <Route path="/magnet"><Magnet></Magnet></Route>
        
      

@@ -1,6 +1,7 @@
+import './CSS_ke_log/CssForFIVEJS.css';
 const Three = () => {
     return (
-        <div className="csskabaap">
+        <div className="csskabaap" id="pncilwala">
          <p> एंटीबायोटिक्स केवल बैक्टीरिया के खिलाफ काम करते हैं, वायरस नहीं।
 
 COVID-19 एक वायरस के कारण होता है, और इसलिए रोकथाम या उपचार के लिए एंटीबायोटिक दवाओं का उपयोग नहीं किया जाना चाहिए।
