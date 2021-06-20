@@ -3,7 +3,7 @@
 
 
 
-[open](cofwah.herokuapp.com)
+[open](https://cofwah.herokuapp.com)
 
 
 # CofWah
