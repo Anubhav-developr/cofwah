@@ -13,7 +13,7 @@
 * we had indexed this application on google and with light SEO modifications and it had responded well !!
 * you can also provide us any myth that has been circulating in your locality we will try to find its validity and will render it in the application afterwards.
 * we had included  vaccine finder in the application we are working in its design part and will update asap (sorry for the unexpected delays due to unpredicted problems )
-
+* Read our PPT [here](Covid-19.pptx)
 
 
 
