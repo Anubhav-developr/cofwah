@@ -3,6 +3,24 @@
 
 
 
+[open](cofwah.herokuapp.com)
+
+
+# CofWah
+
+* in this crisis India had impacted badly and among many problems one problem is that many people espescially from rural background they do not have proper knowledge and due to lack of english reading proficiency and many tv journalists + official sites of healthcare do not printing the myths and rumors in a collected format in hindi language that's why many people blindly following the myths and it also affected quite a lot, people have to put their own time and struggle to know the validity of myth on internet.
+* So we had collected all the myths and had put in the hindi language format in this SPA (single page application) with user friendly format also we had 
+* we had indexed this application on google and with light SEO modifications and it had responded well !!
+* you can also provide us any myth that has been circulating in your locality we will try to find its validity and will render it in the application afterwards.
+* we had included  vaccine finder in the application we are working in its design part and will update asap (sorry for the unexpected delays due to unpredicted problems )
+
+
+
+
+
+
+
+
 
 # Getting Started with Create React App
 
