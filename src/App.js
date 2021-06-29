@@ -71,15 +71,14 @@ const handleRoute = () =>{
         </div>
         <div className="jaha">अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें  <br></br><a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2"><img src={what} height="50" width="50" alt="WA group"></img></a></div>
        <div id="undev">
-      <p><Link to="./vacx" className="jaha" id="jkl">Vaccine Availibility (Under Development)</Link></p>
         
         <div id="vaccinesys"><Route path="./vacx" exact><Vaccine /></Route></div>
        
-      
+      <Vaccine></Vaccine>
        </div>
         <br></br>
-       <div id="loginboundary"> <Route path="/apnalogin"><APNA_LOGIN></APNA_LOGIN></Route></div>
-      <Link to="/apnalogin" id="yuk" className="jaha" onClick={handleRoute}>MEMBER SIGN IN</Link>
+       <div id="loginboundary"> <Route path="/apnalogin"><APNA_LOGIN></APNA_LOGIN></Route></div> <br></br>
+      <Link to="/apnalogin" id="yuk" className="jaha" onClick={handleRoute}>मेंबर लॉगिन</Link>
      
         </p>
       

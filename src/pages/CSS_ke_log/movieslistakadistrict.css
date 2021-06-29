@@ -1,0 +1,56 @@
+@font-face {
+   font-family: anubhav_ka_font;
+   src: url("../ANUBHAVG.ttf");
+ }
+.option_control {
+   font-family: anubhav_ka_font;
+   font-size: 17px;
+   
+
+}
+#sl {
+   font-family: anubhav_ka_font;
+   font-size: 17px;
+   border: 2px solid blueviolet;
+   border-radius: 3px;
+   background: rgb(248, 139, 212);
+   
+}
+#sl:hover {
+  background-color: rgb(107, 182, 150);
+}
+
+.form_controls {
+   display: flex;
+   padding-top: 6px;
+   margin-left: 3px;
+   font-family: anubhav_ka_font;
+ 
+}
+.padding {
+  padding-left: 3px;
+}
+
+#vaccine_actions {
+   margin: 4px;
+   margin-left: 179px;
+   padding-bottom: 8px;
+}
+
+#statenaamid {
+
+   margin: 6px;
+ 
+   margin-top: 17px;
+  
+   
+}
+#nzdiki {
+   display: flex;
+flex-direction: column;
+
+ 
+}
+#dlid {
+ display: block;
+}
