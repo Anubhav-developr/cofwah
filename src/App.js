@@ -34,7 +34,7 @@ const handleRoute = () =>{
       <header className="App-header">
        
         <p>
-        <a href="index.html"> <img src={logoimg} alt="k" width="200" height="100" id="i"></img></a>
+        <a href="index.html"> <img src={logoimg} alt="logo" width="200" height="100" id="i"></img></a>
       <br />
       <h2 class="p">आपको कोविड अफवाहों से बचाना है</h2>
      <div>
@@ -67,9 +67,9 @@ const handleRoute = () =>{
         <div className="jaha">यदि आपके पड़ोस या समाज में कोई अफवाह और मिथक है तो उस भ्रामक अफवाह को प्रस्तुत करें <a href="https://docs.google.com/forms/d/1jAmCNQB2yWYZDjOQFedUWDxqCKuuW4solNrU8vwzU_c/edit#">यहां(here)</a></div>
         <br></br>
        <div className="jaha"> हमें फोलो करें  :</div>
-        <div id="folow"><a href="https://instagram.com/cofwah/"><img src={insta} alt="instagram" width="60" height="60"></img></a>
+        <div id="folow"><a href="https://instagram.com/cofwah/"><img src={insta} alt="instagram-logo" width="60" height="60"></img></a>
         </div>
-        <div className="jaha">अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें  <br></br><a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2"><img src={what} height="50" width="50" alt="WA group"></img></a></div>
+        <div className="jaha">अगर आप समुदाय का हिस्सा बनना चाहते हैं तो हमारे व्हाट्सएप ग्रुप से जुड़ें  <br></br><a href="https://chat.whatsapp.com/KYd7DT162NuKcHpZQn2pA2" rel="nofollow"><img src={what} height="50" width="50" alt="WA group"></img></a></div>
        <div id="undev">
         
         <div id="vaccinesys"><Route path="./vacx" exact><Vaccine /></Route></div>
